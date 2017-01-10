@@ -1,0 +1,29 @@
+<!--
+cette page affiche le detail d'une actualité lorqu'on clique sur elle.
+ce detail contient le titre de l'actualité,le contenu,et la date de publication
+
+-->
+<ion-header>
+    <ion-navbar color="primary">
+        <ion-title>
+           News
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding style="background-color: #072378">
+    <ion-card>
+        <ion-item>
+
+            <p style="color: #072378;text-overflow: ellipsis;"><strong>{{item.titre}}</strong></p>
+
+        </ion-item>
+        <img  src="{{item.urlImage}}"/>
+
+        <ion-card-content>
+            <p style="color: #244CC3">{{item.contenu}}</p>
+             <p style="font-size: 80%;margin-top: 20px">publié le:{{item.date}}</p>
+        </ion-card-content>
+    </ion-card>
+
+</ion-content>

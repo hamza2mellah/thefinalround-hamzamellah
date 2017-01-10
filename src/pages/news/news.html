@@ -1,0 +1,28 @@
+<!--
+-->
+<ion-header>
+    <ion-navbar color="primary">
+
+        <ion-title>
+            News
+        </ion-title>
+
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding style="background-color: #072378">
+    <ion-list >
+        <!-- lister les actualités prevenant de  mon api -->
+        <ion-item *ngFor="let item of items" style="border: none ">
+            <ion-thumbnail >
+                <img src="{{item.urlImage}}" (click)='viewItem(item)' style="width: 100%;height: auto;border-radius: 10px">
+            </ion-thumbnail><br/>
+            <div style="background-color:#6495ED;margin-top: -20px;border-radius: 10px;text-align: center">
+
+                <span style="font-size: 60%;color: white"> {{item.titre}}</span><br>
+                <span style="font-size: 50%;color: black">  Publié le {{item.date}}</span>
+            </div>
+        </ion-item>
+
+    </ion-list>
+</ion-content>
