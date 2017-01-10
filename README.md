@@ -1,6 +1,8 @@
 # thefinalround-hamzamellah
 pour lancer l'application,executez les commandes suivantes:
+
 npm install ## pour installer les modules de nodeJS
+
 ionic serve ## pour lancer l'application sur le navigateur
 
 ## remarque:
